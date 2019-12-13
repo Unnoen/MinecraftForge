@@ -1,6 +1,6 @@
 name: Gradle CI
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
         key: ${{runner.os}}-gradle-${{hashFiles('**/*.gradle')}}
 
     - name: Setup Forge
-      run: ./gradlew setup
+      run: ./gradlew setup build
