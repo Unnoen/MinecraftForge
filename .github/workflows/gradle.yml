@@ -17,6 +17,6 @@ jobs:
       uses: actions/cache@v1
       with:
         path:  ~/.gradle/wrapper
-        key:  ${{runner.os}}-gradlewrapper-${{hashFiles('~/.gradle/wrapper/dists/**.*')}}
+        key:  ${{runner.os}}-gradlewrapper-${{hashFiles('**.*')}}
     - name: Setup with Gradle
       run: ./gradlew wrapper
