@@ -13,5 +13,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Cache gradle wrapper
+      uses: actions/cache@v1
+      with:
+        path:  ~/.gradle/wrapper
+        key:  ${{runner.os}}-gradlewrapper-${{hashFiles('.gradle/wrapper/dists/**.*')}}
     - name: Setup with Gradle
-      run: ./gradlew setup
+      run: ./gradlew wrapper
