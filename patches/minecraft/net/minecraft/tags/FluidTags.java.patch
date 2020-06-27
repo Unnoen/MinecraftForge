@@ -1,0 +1,11 @@
+--- a/net/minecraft/tags/FluidTags.java
++++ b/net/minecraft/tags/FluidTags.java
+@@ -12,7 +12,7 @@
+    public static final ITag.INamedTag<Fluid> field_206959_a = func_206956_a("water");
+    public static final ITag.INamedTag<Fluid> field_206960_b = func_206956_a("lava");
+ 
+-   public static ITag.INamedTag<Fluid> func_206956_a(String p_206956_0_) {
++   private static ITag.INamedTag<Fluid> func_206956_a(String p_206956_0_) {
+       return field_206961_c.func_232937_a_(p_206956_0_);
+    }
+ 

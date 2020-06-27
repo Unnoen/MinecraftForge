@@ -1,0 +1,10 @@
+--- a/net/minecraft/tags/BlockTags.java
++++ b/net/minecraft/tags/BlockTags.java
+@@ -76,6 +76,7 @@
+    public static final ITag.INamedTag<Block> field_232873_an_ = func_199894_a("nylium");
+    public static final ITag.INamedTag<Block> field_232874_ao_ = func_199894_a("wart_blocks");
+    public static final ITag.INamedTag<Block> field_232875_ap_ = func_199894_a("beacon_base_blocks");
++
+    public static final ITag.INamedTag<Block> field_232876_aq_ = func_199894_a("soul_speed_blocks");
+    public static final ITag.INamedTag<Block> field_232877_ar_ = func_199894_a("wall_post_override");
+    public static final ITag.INamedTag<Block> field_232878_as_ = func_199894_a("climbable");

@@ -1,0 +1,11 @@
+--- a/net/minecraft/tags/EntityTypeTags.java
++++ b/net/minecraft/tags/EntityTypeTags.java
+@@ -14,7 +14,7 @@
+    public static final ITag.INamedTag<EntityType<?>> field_226156_d_ = func_232896_a_("arrows");
+    public static final ITag.INamedTag<EntityType<?>> field_232893_e_ = func_232896_a_("impact_projectiles");
+ 
+-   public static ITag.INamedTag<EntityType<?>> func_232896_a_(String p_232896_0_) {
++   private static ITag.INamedTag<EntityType<?>> func_232896_a_(String p_232896_0_) {
+       return field_219766_c.func_232937_a_(p_232896_0_);
+    }
+ 
