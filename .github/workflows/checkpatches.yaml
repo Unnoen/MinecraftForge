@@ -1,6 +1,8 @@
 name: Check Patches
 
-on: pull_request
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
 
 jobs:
   Check Patches:
@@ -11,5 +13,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Verify and check patches.
+    - name: Cache gradle wrapper
+      uses: actions/cache@v1
+      with:
+        path: ~/.gradle/wrapper
+        key: ${{runner.os}}-wrapper-${{hashFiles('gradle/wrapper/*.*')}}
+    - name: Verify and check patches
       run: ./gradlew checkPatches
